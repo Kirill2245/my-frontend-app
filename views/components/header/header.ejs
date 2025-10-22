@@ -1,22 +1,30 @@
-<header class="header-base">
+<header class="header-base" role="banner">
     <div class="header-contain">
-        <h1>Elfen lied</h1>
-        <nav >
+        <h1 aria-label="Logo">Elfen lied</h1>
+        <nav role="navigation" aria-label="Main navigation">
             <div>
-                <img src="" alt="">
+                <img src="/images/CatalogIcon.svg" alt="icon-catalog">
                 <a href="">Каталог</a>
             </div>
-            <a href="">Блог</a>
-            <a href="">Контакты</a>
             <div>
-                <img src="" alt="">
+                <a href="">Блог</a>
+                <a href="">Контакты</a>
+            </div>
+            <div>
+                <img src="/images/search.svg" alt="Search-icon">
                 <a href="">Поиск</a>
             </div>
-            <figure>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </figure>
+            <div role="group" aria-label="User actions">
+                <button aria-label="Favourites">
+                    <img src="/images/favorite.svg" alt="favorite-icon" width="20" height="20">
+                </button>
+                <button aria-label="Personal account">
+                    <img src="/images/profile.svg" alt="profile-icon" width="20" height="20">
+                </button>
+                <button aria-label="Basket">
+                    <img src="/images/basket.svg" alt="basket-icon" width="20" height="20">
+                </button>
+            </div>
         </nav>
     </div>
 </header>

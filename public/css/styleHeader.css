@@ -13,28 +13,9 @@
     width: 100%;
     height: 37px;
     display: flex;
-}
-.header-contain nav{
-    display: flex;
-}
-.header-contain a{
-    font-family: 'Euclid Circular A', sans-serif;
-    font-weight: 500;
-    font-style: normal; 
-    font-size: 1.125rem;
-    line-height: 100%;
-    letter-spacing: 0%;
-    display: inline-block;
-    vertical-align: top;
-    line-height: 0.85; 
-    margin-top: -0.08em;
-    margin-bottom: -0.05em;
-    color: #FFFFFF;
-    text-decoration: none;
-    height: 13px;
-}
-.header-contain nav div{
-    display: flex;
+    align-items: center;
+    gap: 133px;
+
 }
 .header-contain h1{
     width: 104px;
@@ -55,4 +36,53 @@
     box-sizing: border-box;
     white-space: nowrap;
     overflow: hidden;
+    flex-shrink: 0;
+}
+.header-contain nav{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.header-contain nav button{
+    background-color: transparent;
+    border: none;
+    height: 20.5px;
+    padding: 0;
+}
+.header-contain a{
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-style: normal; 
+    font-size: 1.125rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 0.85; 
+    margin-top: -0.08em;
+    margin-bottom: -0.05em;
+    color: #FFFFFF;
+    text-decoration: none;
+    height: 13px;
+}
+.header-contain nav div{
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+.header-contain nav div:nth-of-type(1){
+    height: 15px;
+    margin-right: 27.045%;
+}
+.header-contain nav div:nth-of-type(1) img{
+    width: 15px;
+    height: 15px;
+}
+.header-contain nav div:nth-of-type(2){
+    height: 13px;
+    margin-right: 26.98%;
+}
+.header-contain nav div:nth-of-type(3){
+    height: 26px;
+    margin-right: 17.26%;
 }
