@@ -1,1 +1,37 @@
-<%- include('../components/base') %>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styleHeader.css">
+    <link rel="stylesheet" href="/css/styleMain.css">
+    <link rel="stylesheet" href="/css/sectionSlide.css">
+    <style>
+        @font-face {
+            font-family: 'Le Murmure';
+            src: url('/fonts/le-murmure/ofont.ru_Le_Murmure.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Euclid Circular A';
+            src: url('/fonts/euclid-circular-a/Euclid_Circular_A_Italic.ttf') format('truetype');
+            font-weight: 400;
+            font-style: italic;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Euclid Circular A';
+            src: url('../fonts/euclid-circular-a/Euclid_Circular_A_Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+</head>
+<body>
+    <%- include('../components/header/header') %>
+    <%- include('../components/main/main') %>
+    <%- include('../components/footer/footer') %>
+</body>
+</html>
