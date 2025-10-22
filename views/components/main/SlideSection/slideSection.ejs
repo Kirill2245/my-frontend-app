@@ -1,0 +1,27 @@
+<section class="section-slide-card">
+    <% cardlist.forEach((card, index) => { %>
+         <div class="card-slide" itemscope itemtype="https://schema.org/Product">
+            <div class="card-title">
+                <h2 itemprop="name"><%= card.name %></h2>
+                <img src="<%= card.image %>" alt="<%= card.name %>">
+            </div>
+            <article class="card-body">
+                <div class="article-card-contin">
+                    <div>
+                        <h3 itemprop="category"><%= card.type %></h3>
+                        <p itemprop="description"><%= card.descripton %></p>
+                    </div>
+                    <div class="line-article-price"></div>
+                    <p itemprop="price" class="card-price"><%= card.price %> ₽</p>
+                </div>
+                <div class="btn_buy_card">
+                    <%- include('./cardBtn') %>
+                </div>
+            </article>
+            <div class="slide-number">
+                <p>СЛАЙД</p>
+                <p><%= (index + 1).toString().padStart(2, '0') %></p>
+            </div>
+         </div>
+    <% }) %>
+</section>

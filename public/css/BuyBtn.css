@@ -1,0 +1,38 @@
+
+.btn_relative_box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.btn_relative_box .elips1{
+    top:50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.btn_relative_box .elips2{
+    top:50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.btn_relative_box button{
+    top:50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border: none;
+    background-color: transparent;
+}
+.btn_relative_box button div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    color:white;
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
