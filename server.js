@@ -1,28 +1,22 @@
-const express = require('express');
-const path = require('path');
+import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static('public'));
 
-
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.render('pages/index');
 });
-
-
-app.get('/api/hello', (req, res) => {
-  res.json({ 
-    message: 'Привет от Express сервера!',
-    timestamp: new Date().toISOString(),
-    status: 'success'
-  });
-});
-
 
 app.listen(PORT, () => {
-  console.log(`🚀 Сервер запущен на порту ${PORT}`);
-  console.log(`📁 Откройте http://localhost:${PORT}`);
+  console.log(`http://localhost:${PORT}`);
 });
