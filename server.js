@@ -23,7 +23,25 @@ app.use(express.static('public'));
 
 
 app.get('/', (req, res) => {
-  const card = ["1", "2", "3"]
+  const card = [{
+    name:'Benjamin Moore',
+    type:'Светильник',
+    descripton:'Функциональная дизайнерская лампа для создания максимально комфортного освещения',
+    price:'150 000',
+    image:'/images/lamp.png'
+  },{
+    name:'Paint Here Glory',
+    type:'Кресло',
+    descripton:'Функциональная дизайнерское кресло для создания максимально уюта в помещении',
+    price:'120 000',
+    image:'/images/armchair.png'   
+  },{
+    name:'Benjamin Moore',
+    type:'Высокий стол',
+    descripton:'Функциональная дизайнерская лампа для создания максимально комфортного освещения',
+    price:'235 000',
+    image:'/images/table.png'  
+  }]
   console.log('✅ Маршрут / вызван');
   res.render('pages/index',{
     cardlist:card
