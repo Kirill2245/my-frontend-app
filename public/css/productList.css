@@ -1,4 +1,5 @@
 .header-product-secton{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,8 +7,11 @@
 .card-list{
     color: white;
     display: flex;
-    gap: 107px;
+    gap: 100px;
     flex-wrap: wrap;
+    overflow-x: hidden; 
+    justify-content: flex-start;
+    width: 100%;
 }
 .header-product-secton div{
     display: flex;
@@ -19,6 +23,8 @@
     font-size: 1.125rem;
 }
 .card-product{
+    flex: 0 0 auto; 
+    transition: opacity 0.3s ease;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -127,4 +133,27 @@
     font-size: 20px;
     line-height: 120%;
     color: #FFFFFF;
+}
+.upload-more-btn{
+    width: 319px;
+    height: 135px;
+    background-color: #FFFFFF30;
+    backdrop-filter: blur(30.27031707763672px);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: 2px solid #D9FF5A;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-13deg);
+    font-family: 'Euclid Circular A', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.upload-more-btn span, .upload-more-btn svg{
+    transform: rotate(13deg);
 }

@@ -80,6 +80,9 @@ app.get('/selected-category/:id', (req, res) => {
       {name:'Kristin', descripton:'Зеркало напольное', price:'150 000',  color:'#A5D4FF', image:'/images/elongated.png' },
       {name:'Kristin', descripton:'Зеркало напольное', price:'150 000',  color:'#A5D4FF', image:'/images/elongated.png'},
       {name:'Kristin', descripton:'Зеркало напольное', price:'150 000',  color:'#A5D4FF', image:'/images/elongated.png'},
+      {name:'Kristin', descripton:'Зеркало напольное', price:'150 000', color:'#A5D4FF', image:'/images/elongated.png'},
+      {name:'Kristin', descripton:'Зеркало напольное', price:'150 000', color:'#A5D4FF', image:'/images/elongated.png'},
+      {name:'Kristin', descripton:'Зеркало напольное', price:'150 000', color:'#A5D4FF', image:'/images/elongated.png'},
     ]
     const products = [
         {id:1, list:productList1},
