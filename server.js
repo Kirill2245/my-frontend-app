@@ -74,7 +74,25 @@ app.get('/', (req, res) => {
     category_card:category_card
   });
 });
-
+app.get('/selected-category/:id', (req, res) => {
+    const productList1 = [
+      {name:'Kristin', descripton:'Зеркало напольное', price:'150 000', color:'#A5D4FF', image:'/images/elongated.png'},
+      {name:'Kristin', descripton:'Зеркало напольное', price:'150 000',  color:'#A5D4FF', image:'/images/elongated.png' },
+      {name:'Kristin', descripton:'Зеркало напольное', price:'150 000',  color:'#A5D4FF', image:'/images/elongated.png'},
+      {name:'Kristin', descripton:'Зеркало напольное', price:'150 000',  color:'#A5D4FF', image:'/images/elongated.png'},
+    ]
+    const products = [
+        {id:1, list:productList1},
+        {id:2, list:productList1},
+        {id:3, list:productList1},
+        {id:4, list:productList1}
+    ];
+    const categoryId = req.params.id;
+    const category = products.find(card => card.id == categoryId);
+    
+    res.setHeader('Content-Type', 'application/json');
+    res.json(category);
+});
 
 try {
   app.listen(PORT, () => {

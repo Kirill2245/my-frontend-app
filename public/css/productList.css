@@ -1,0 +1,130 @@
+.header-product-secton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-list{
+    color: white;
+    display: flex;
+    gap: 107px;
+    flex-wrap: wrap;
+}
+.header-product-secton div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+}
+.header-product-secton div p {
+    font-size: 1.125rem;
+}
+.card-product{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 275px;
+}
+.card-product-contain{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.card-product-contain img{
+    min-width: 126px;
+    max-width: 233px;
+    width: auto; 
+    height: auto; 
+}
+.card-product-contain div{
+    position: absolute;
+    top:7px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+}
+.card-product article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card-product article h3{
+    font-size: 1.75rem;
+    line-height: 36px;
+    margin-bottom: 7px;
+}
+.card-product article .text-description{
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1; 
+    display: inline-block;
+    padding:0; 
+    vertical-align: top;
+    margin-bottom: 19px;
+}
+.card-product article .price-card-buy{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 26px;
+}
+.card-product article .price-card-buy div{
+    display: flex;
+    gap: 7px;
+}
+.card-product article .price-card-buy div span{
+    width: 13px;
+    height: 14px;
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+.card-product article .price-card-buy div p {
+    height: 20px;
+    font-family: 'Floreste Wavy';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 27px; 
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.card-product article .price-card-buy button{
+    width: 102px;
+    height: 24px;
+    border: none;
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    background-color: transparent;
+}
+.card-product article .price-card-buy button span{
+    width: 67px;
+    font-family: 'Euclid Circular A', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    color: #FFFFFF;
+}

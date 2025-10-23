@@ -1,0 +1,132 @@
+.category-card {
+    position: relative;
+    width: 428px;
+    height: 517px;
+    padding: 0 35px 17px 5px;
+    box-sizing: border-box;
+    flex-shrink: 0; 
+}
+
+.bg-image-category {
+    width: 388px;
+    height: 461px;
+}
+
+.category-card h3 {
+    text-transform: uppercase;
+    width: 181px;
+    position: absolute;
+    font-size: 1.75rem;
+    letter-spacing: 0.5px;
+    top: 37px;
+}
+
+.category-card .category-image {
+    width: 199px;
+    position: absolute;
+    top: 112px;
+    left: 101px;
+    transition: transform 0.3s ease;
+}
+
+.count-category {
+    position: absolute;
+    width: 81px;
+    height: 72px;
+    left: 346px;
+    top: 150px;
+    transform: rotate(-23deg);
+    background-color: #FA8FEF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.count-category div {
+    display: flex;
+    gap: 1.5px;
+    align-items: flex-end;
+    transition: transform 0.3s ease;
+}
+
+.count-category p {
+    height: 28px;
+    font-family: 'Floreste Wavy';
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 28px;
+    letter-spacing: 4%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 28px;
+    max-height: 28px;
+}
+
+.count-category span {
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    line-height: 1;
+    letter-spacing: 0%;
+    text-align: start;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+}
+
+.other-text-card {
+    position: absolute;
+    top: 228px;
+    left: 19.41px;
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 0.9;
+    letter-spacing: 8%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.category-card button {
+    position: absolute;
+    width: 101px;
+    height: 101px;
+    border-radius: 50%;
+    border: 2px solid #D9FF5A;
+    background-color: rgba(235, 227, 255, 0.188); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 149px;
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+    cursor: pointer;
+}
+
+.category-card button svg path {
+    transition: stroke 0.6s ease; 
+}
+
+.category-card button:hover svg path {
+    stroke: #AE97E8;
+}
+
+.category-card button:hover {
+    background-color: #D9FF5A;
+    border-color: #AE97E8;
+}
+.btn-active{
+    background-color: #D9FF5A !important;
+    border-color: #AE97E8 !important;
+}
+.btn-active svg path {
+    stroke: #AE97E8;
+}
