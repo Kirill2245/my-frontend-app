@@ -1,0 +1,17 @@
+<section class="category-section">
+    <h2>категории</h2>
+    <div class="category-line">
+         <% category_card.forEach((card, index) => { %>
+            <div class="category-card">
+                <h3><%= card.name %></h3>
+                <img src="<%= card.image %>" alt="" class="category-image">
+                <div class="count-category">
+                    <p><%= card.count %></p>
+                    <span>ШТ</span>
+                </div>
+                <img src="/images/Subtract.svg" alt="" class="bg-image-category">
+                <button><img src="/images/Arrow.svg" alt=""></button>
+            </div> 
+        <% }) %>
+    </div>
+</section>

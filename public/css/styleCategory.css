@@ -1,0 +1,109 @@
+.category-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    justify-content: center;
+}
+.category-section h2{
+    color: white;
+    text-align: center;
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.5px; 
+    text-transform: uppercase;
+    margin: 0 0 1rem 0; 
+    font-size: 60px;
+}
+.category-line{
+    display: flex;
+    gap: 19.05px;
+    width: 100%;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+.category-card{
+    position: relative;
+    width: 428px;
+    height: 517px;
+    padding: 0 35px 17px 5px;
+    box-sizing: border-box;
+}
+.bg-image-category{
+    width: 388px;
+    height: 461px;
+}
+.category-card h3{
+    width: 181px;
+    position: absolute;
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: 0.5px; 
+    text-transform: uppercase;
+    margin: 0 0 1rem 0; 
+    text-transform: uppercase;
+    color: white;
+    top:37px;
+    transform: translate(0,0);
+}
+.category-card .category-image{
+    width: 199px;
+    position: absolute;
+    top:112px;
+    left: 101px;
+    transform: translate(0,0);
+}
+.count-category{
+    position: absolute;
+    width: 81px;
+    height: 72px;
+    left: 346px;
+    top: 150px;
+    transform: rotate(-23deg) translate(0,0);
+    opacity: 1;
+    background-color: #FA8FEF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5px;
+}
+.count-category p{
+    font-family: 'Floreste Wavy';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 0.8;
+    letter-spacing: 4%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+.count-category span{
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1; 
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: bottom; 
+    color: white;
+}
+.category-card button{
+    position: absolute;
+    width: 101px;
+    height: 101px;
+    border-radius: 50%;
+    border: 2px solid #D9FF5A;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 149px;
+}

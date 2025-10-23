@@ -2,4 +2,7 @@ main{
     background-color: #AE97E8;
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 170px;
 }

@@ -1,4 +1,5 @@
 import express from 'express';
+import { type } from 'os';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -42,9 +43,35 @@ app.get('/', (req, res) => {
     price:'235 000',
     image:'/images/table.png'  
   }]
+  const category_card = [{
+    name:'напольные зеркала',
+    count:4,
+    type:'зеркала',
+    other_text:'изготовление на заказ',
+    image:'/images/mirror.png'
+  },{
+    name:'напольные зеркала',
+    count:4,
+    type:'зеркала',
+    other_text:'изготовление на заказ',
+    image:'/images/mirror.png'
+  },{
+    name:'напольные зеркала',
+    count:4,
+    type:'зеркала',
+    other_text:'изготовление на заказ',
+    image:'/images/mirror.png'
+  },{
+    name:'напольные зеркала',
+    count:4,
+    type:'зеркала',
+    other_text:'изготовление на заказ',
+    image:'/images/mirror.png'
+  }]
   console.log('✅ Маршрут / вызван');
   res.render('pages/index',{
-    cardlist:card
+    cardlist:card,
+    category_card:category_card
   });
 });
 
