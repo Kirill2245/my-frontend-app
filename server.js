@@ -50,19 +50,19 @@ app.get('/', (req, res) => {
     other_text:'изготовление на заказ',
     image:'/images/mirror.png'
   },{
-    name:'напольные зеркала',
+    name:'торшеры и лампы',
     count:4,
     type:'зеркала',
     other_text:'изготовление на заказ',
     image:'/images/mirror.png'
   },{
-    name:'напольные зеркала',
+    name:'кресла и стулья',
     count:4,
     type:'зеркала',
     other_text:'изготовление на заказ',
     image:'/images/mirror.png'
   },{
-    name:'напольные зеркала',
+    name:'столы и тумбы',
     count:4,
     type:'зеркала',
     other_text:'изготовление на заказ',

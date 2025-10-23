@@ -1,17 +1,64 @@
-<section class="category-section">
-    <h2>категории</h2>
-    <div class="category-line">
-         <% category_card.forEach((card, index) => { %>
-            <div class="category-card">
-                <h3><%= card.name %></h3>
-                <img src="<%= card.image %>" alt="" class="category-image">
+<section class="category-section" aria-labelledby="categories-heading">
+
+    <h2 id="categories-heading" class="text-uppercase">Категории товаров</h2>
+    
+    <p class="visually-hidden">Ознакомьтесь с нашими основными категориями товаров и их ассортиментом</p>
+    
+    <div class="category-line" role="list" aria-label="Список категорий">
+        <% category_card.forEach((card, index) => { %>
+            <article class="category-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+                <meta itemprop="category" content="<%= card.name %>">
+                
+                <h3 itemprop="name" class="text-uppercase "><%= card.name %></h3>
+                
+                <img src="<%= card.image %>" 
+                     alt="<%= card.name %> - изображение категории" 
+                     class="category-image"
+                     itemprop="image"
+                     loading="lazy" 
+                     width="300" 
+                     height="200">
+                
                 <div class="count-category">
-                    <p><%= card.count %></p>
-                    <span>ШТ</span>
+                    <div>
+                        <p itemprop="additionalProperty" itemscope itemtype="https://schema.org/PropertyValue"><meta itemprop="name" content="количество"><%= card.count %></p>
+                        <span>ШТ</span>
+                    </div>
                 </div>
-                <img src="/images/Subtract.svg" alt="" class="bg-image-category">
-                <button><img src="/images/Arrow.svg" alt=""></button>
-            </div> 
+                
+                <img src="/images/Subtract.svg" 
+                     alt="" 
+                     class="bg-image-category"
+                     aria-hidden="true">
+                
+                <svg width="94" height="199" viewBox="0 0 94 199" fill="none" 
+                     xmlns="http://www.w3.org/2000/svg" class="other-text-card" 
+                     aria-labelledby="text-<%= index %>" role="img">
+                    <title id="text-<%= index %>"><%= card.other_text %></title>
+                    <path id="textCurve-<%= index %>" 
+                          d="M87 187 C77 179 62 164 50 148 C43 135 36 123 29 104 C25 91 22 79 18 64 C17 48 16 36 15 23 C15 15 16 4 16 0" 
+                          fill="transparent"/>
+                    <text fill="white">
+                        <textPath href="#textCurve-<%= index %>" startOffset="0%">
+                            <%= card.other_text %>
+                        </textPath>
+                    </text>
+                </svg>
+                
+                <button onmouseover="rotateElement(this)" 
+                        onmouseout="resetElement(this)"
+                        aria-label="Посмотреть подробности категории <%= card.name %>"
+                        itemprop="url">
+                    <svg width="22" height="34" viewBox="0 0 22 34" fill="none" 
+                         xmlns="http://www.w3.org/2000/svg"
+                         aria-hidden="true">
+                        <path d="M21 22.6667C19.94 22.6667 18.3571 23.7051 17.0286 24.7562C15.3143 26.1077 13.8186 27.7227 12.6771 29.5743C11.8214 30.9627 11 32.6457 11 34M11 34C11 32.6457 10.1786 30.9612 9.32286 29.5743C8.18 27.7227 6.68429 26.1077 4.97286 24.7562C3.64286 23.7051 2.05714 22.6667 1 22.6667M11 34L11 -1.95497e-06" 
+                              stroke="#D9FF5A" 
+                              stroke-width="2" 
+                              stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </article> 
         <% }) %>
     </div>
 </section>
