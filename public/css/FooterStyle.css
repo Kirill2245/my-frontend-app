@@ -1,0 +1,11 @@
+footer{
+    height: 129px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 67px;
+    box-sizing: border-box;
+    margin-top: 170px;
+    margin-bottom: 91px;
+}

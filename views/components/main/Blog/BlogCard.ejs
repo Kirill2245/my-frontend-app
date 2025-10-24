@@ -1,23 +1,39 @@
 <% blog_list.forEach((item, index) => { %>
-    <div class="card-blog">
-        <img src="/images/formBlog.svg" alt="">
-        <article class="blog-info">
-            <header>
-                <p>0<%= index + 1%></p>
-                <p><%= item.author%></p>
-            </header>
-            <h3><%= item.subject_blog%></h3>
-            <data value="<%= item.date%>"><%= item.formattedDate %></data>
-        </article>
-        <div class = "card-blog-imageContain">
-            <img class="blog-image" src="<%= item.image%>" alt="">
-        </div>
-        <div 
-            class="card-blog-time"
-            onmouseover="scaleElement(this)"
-            onmouseout="scaleResetElement(this)"
-        >
-            <time datetime="PT3M"><span>3</span> <span>мин</span></time>
-        </div>
+<article class="card-blog" itemscope itemtype="https://schema.org/BlogPosting">
+    <img src="/images/formBlog.svg" alt="" aria-hidden="true">
+    
+    <div class="blog-info" itemprop="mainEntity">
+        <header>
+            <meta itemprop="position" content="<%= index + 1 %>">
+            <p aria-label="Номер статьи">0<%= index + 1 %></p>
+            <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+                <span itemprop="name"><%= item.author %></span>
+            </p>
+        </header>
+        
+        <h3 itemprop="headline"><%= item.subject_blog %></h3>
+        
+        <time datetime="<%= item.date %>" itemprop="datePublished">
+            <%= item.formattedDate %>
+        </time>
     </div>
+    
+    <div class="card-blog-imageContain">
+        <img class="blog-image" 
+             src="<%= item.image %>" 
+             alt="Иллюстрация к статье: <%= item.subject_blog %>"
+             itemprop="image"
+             loading="lazy"
+             width="316" 
+             height="257">
+    </div>
+    
+    <div class="card-blog-time"
+         onmouseover="scaleElement(this)"
+         onmouseout="scaleResetElement(this)">
+        <time datetime="PT3M" itemprop="timeRequired">
+            <span>3</span> <span>мин</span>
+        </time>
+    </div>
+</article>
 <% }) %>

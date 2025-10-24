@@ -50,7 +50,7 @@
     display: flex;
     align-items: center;
 }
-.blog-info data{
+.blog-info time{
     margin-top: 88px;
     width: 82px;
     display: inline-block;

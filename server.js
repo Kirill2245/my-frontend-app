@@ -78,13 +78,13 @@ app.get('/', (req, res) => {
       author:'Laura Busche',
       subject_blog:'Световой дизайн в интерьере',
       date:'2023-01-14T00:00:00.000Z',
-      image:'/images/test1Blog.png'
+      image:'/images/test1Blog.jpg'
     },
     {
       author:'Laura Busche',
       subject_blog:'как выбрать шкаф в спальню',
       date:'2023-01-14T00:00:00.000Z',
-      image:'/images/test2Blog.png'
+      image:'/images/test2Blog.jpg'
     },
 
   ]
@@ -92,7 +92,6 @@ app.get('/', (req, res) => {
         ...item,
         formattedDate: formatDateToRussian(item.date)
     }));
-    console.log(formattedData)
   console.log('✅ Маршрут / вызван');
   res.render('pages/index',{
     cardlist:card,
