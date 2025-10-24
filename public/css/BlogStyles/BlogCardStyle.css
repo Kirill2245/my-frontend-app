@@ -72,10 +72,11 @@
     border-radius: 26px;
 }
 .card-blog-imageContain img{
-    width: 150%;
-    height: 160%;
+    width: 120%;
+    height: 110%;
     object-fit: cover; 
     object-position: left; 
+    transition: all 0.5s ease;
 }
 .card-blog-time{
     position: absolute;

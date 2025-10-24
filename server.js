@@ -76,15 +76,15 @@ app.get('/', (req, res) => {
     },
     {
       author:'Laura Busche',
-      subject_blog:'новая коллекция кресел',
+      subject_blog:'Световой дизайн в интерьере',
       date:'2023-01-14T00:00:00.000Z',
-      image:'/images/blogimg.jpg'
+      image:'/images/test1Blog.png'
     },
     {
       author:'Laura Busche',
-      subject_blog:'новая коллекция кресел',
+      subject_blog:'как выбрать шкаф в спальню',
       date:'2023-01-14T00:00:00.000Z',
-      image:'/images/blogimg.jpg'
+      image:'/images/test2Blog.png'
     },
 
   ]

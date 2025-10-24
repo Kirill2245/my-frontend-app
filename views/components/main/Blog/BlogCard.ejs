@@ -10,9 +10,13 @@
             <data value="<%= item.date%>"><%= item.formattedDate %></data>
         </article>
         <div class = "card-blog-imageContain">
-            <img src="<%= item.image%>" alt="">
+            <img class="blog-image" src="<%= item.image%>" alt="">
         </div>
-        <div class="card-blog-time">
+        <div 
+            class="card-blog-time"
+            onmouseover="scaleElement(this)"
+            onmouseout="scaleResetElement(this)"
+        >
             <time datetime="PT3M"><span>3</span> <span>мин</span></time>
         </div>
     </div>
