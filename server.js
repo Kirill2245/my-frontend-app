@@ -53,19 +53,19 @@ app.get('/', (req, res) => {
     count:4,
     type:'зеркала',
     other_text:'изготовление на заказ',
-    image:'/images/mirror.png'
+    image:'/images/lampCat.png'
   },{
     name:'кресла и стулья',
     count:4,
     type:'зеркала',
     other_text:'изготовление на заказ',
-    image:'/images/mirror.png'
+    image:'/images/chair.png'
   },{
     name:'столы и тумбы',
     count:4,
     type:'зеркала',
     other_text:'изготовление на заказ',
-    image:'/images/mirror.png'
+    image:'/images/tableCat.png'
   }]
   const blog_list = [
     {
@@ -110,11 +110,35 @@ app.get('/selected-category/:id', (req, res) => {
       {name:'Kristin', descripton:'Зеркало напольное', price:'150 000', color:'#A5D4FF', image:'/images/elongated.png'},
       {name:'Kristin', descripton:'Зеркало напольное', price:'150 000', color:'#A5D4FF', image:'/images/elongated.png'},
     ]
+    const productList2 = [
+      {name:'coppelia', descripton:'Лампа настольная', price:'150 000', color:'#29D0D9', image:'/images/lampProduct.png'},
+      {name:'coppelia', descripton:'Лампа настольная', price:'150 000',  color:'#29D0D9', image:'/images/lampProduct.png' },
+      {name:'coppelia', descripton:'Лампа настольная', price:'150 000',  color:'#29D0D9', image:'/images/lampProduct.png'},
+      {name:'coppelia', descripton:'Лампа настольная', price:'150 000',  color:'#29D0D9', image:'/images/lampProduct.png'},
+      {name:'coppelia', descripton:'Лампа настольная', price:'150 000', color:'#29D0D9', image:'/images/lampProduct.png'},
+      {name:'coppelia', descripton:'Лампа настольная', price:'150 000', color:'#29D0D9', image:'/images/lampProduct.png'},
+      {name:'coppelia', descripton:'Лампа настольная', price:'150 000', color:'#29D0D9', image:'/images/lampProduct.png'},
+    ]
+    const productList3 = [
+      {name:'Wendy', descripton:'Лампа настольная', price:'150 000', color:'#F0B3EA', image:'/images/chairProd.png'},
+      {name:'Wendy', descripton:'Лампа настольная', price:'150 000',  color:'#F0B3EA', image:'/images/chairProd.png' },
+      {name:'Wendy', descripton:'Лампа настольная', price:'150 000',  color:'#F0B3EA', image:'/images/chairProd.png'},
+      {name:'Wendy', descripton:'Лампа настольная', price:'150 000',  color:'#F0B3EA', image:'/images/chairProd.png'},
+      {name:'Wendy', descripton:'Лампа настольная', price:'150 000', color:'#F0B3EA', image:'/images/chairProd.png'},
+    ]
+    const productList4 = [
+      {name:'Judith', descripton:'Лампа настольная', price:'150 000', color:'#F88EFA', image:'/images/tableProd.png'},
+      {name:'Judith', descripton:'Лампа настольная', price:'150 000',  color:'#F88EFA', image:'/images/tableProd.png' },
+      {name:'Judith', descripton:'Лампа настольная', price:'150 000',  color:'#F88EFA', image:'/images/tableProd.png'},
+      {name:'Judith', descripton:'Лампа настольная', price:'150 000',  color:'#F88EFA', image:'/images/tableProd.png'},
+      {name:'Judith', descripton:'Лампа настольная', price:'150 000', color:'#F88EFA', image:'/images/tableProd.png'},
+      {name:'Judith', descripton:'Лампа настольная', price:'150 000', color:'#F88EFA', image:'/images/tableProd.png'}
+    ]
     const products = [
         {id:1, list:productList1},
-        {id:2, list:productList1},
-        {id:3, list:productList1},
-        {id:4, list:productList1}
+        {id:2, list:productList2},
+        {id:3, list:productList3},
+        {id:4, list:productList4}
     ];
     const categoryId = req.params.id;
     const category = products.find(card => card.id == categoryId);

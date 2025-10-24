@@ -14,7 +14,7 @@ function initHorizontalCardList() {
                 card.style.display = 'none';
                 hasHiddenCards = true;
             } else {
-                card.style.display = 'block';
+                card.style.display = 'flex';
             }
         });
         
@@ -24,7 +24,7 @@ function initHorizontalCardList() {
     function showAllCards() {
         allCardsVisible = true;
         cards.forEach(card => {
-            card.style.display = 'block';
+            card.style.display = 'flex';
         });
         loadMoreBtn.style.display = 'none';
     }
@@ -42,7 +42,7 @@ function initHorizontalCardList() {
             hideExcessCards(maxVisible);
         } else {
             cards.forEach(card => {
-                card.style.display = 'block';
+                card.style.display = 'flex';
             });
             loadMoreBtn.style.display = 'none';
         }
