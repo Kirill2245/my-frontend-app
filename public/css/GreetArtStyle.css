@@ -1,0 +1,28 @@
+.art-contain{
+    width: 100%;
+    position: relative;
+    height: 260.76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.art-contain img{
+    width: 100%; 
+    min-width: 1088px;
+    height: auto; 
+    min-height: 108px;
+    max-height: 260.76px;
+    object-fit: cover; 
+    object-position: center; 
+}
+.art-contain img:first-of-type{
+
+    position: absolute;
+    z-index: 1;
+}
+.art-contain img:last-of-type{
+    position: absolute;
+    z-index: 100;
+}
