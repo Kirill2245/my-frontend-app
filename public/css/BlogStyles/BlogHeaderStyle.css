@@ -41,3 +41,17 @@
     margin: 0;
     padding: 0;
 }
+@media(max-width:450px){
+    .blog-header div:first-of-type{
+        gap: 20px;
+    }
+    .blog-header div:first-of-type h2{
+        font-size: 23px;
+    }
+    .blog-header div:last-of-type{
+        gap: 20px;
+    }
+    .blog-header div:last-of-type p{
+        font-size: 25px;
+    }
+}

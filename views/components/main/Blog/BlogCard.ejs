@@ -1,6 +1,6 @@
 <% blog_list.forEach((item, index) => { %>
 <article class="card-blog" itemscope itemtype="https://schema.org/BlogPosting">
-    <img src="/images/formBlog.svg" alt="" aria-hidden="true">
+    <img src="/images/formBlog.svg" alt="" aria-hidden="true" class="bg-img-blog">
     
     <div class="blog-info" itemprop="mainEntity">
         <header>
@@ -23,9 +23,7 @@
              src="<%= item.image %>" 
              alt="Иллюстрация к статье: <%= item.subject_blog %>"
              itemprop="image"
-             loading="lazy"
-             width="316" 
-             height="257">
+             loading="lazy">
     </div>
     
     <div class="card-blog-time"
