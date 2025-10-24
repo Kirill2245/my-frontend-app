@@ -6,3 +6,8 @@ main{
     flex-direction: column;
     gap: 170px;
 }
+@media(max-width:500px){
+    main{
+        gap: 120px;
+    }
+}

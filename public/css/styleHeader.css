@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     padding: 0 120px 0 60px;
-    margin-top: 53px;
+    margin-top: 25px;
 }
 .header-contain{
     width: 100%;
@@ -141,5 +141,10 @@
     }
     .img-contact{
         display: block;
+    }
+}
+@media(max-width:500px){
+    .header-base{
+        padding: 0 15px;
     }
 }

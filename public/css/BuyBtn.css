@@ -47,3 +47,12 @@
         height: 156px;
     }
 }
+@media(max-width:770px){
+    .btn_relative_box .elips1, .btn_relative_box .elips2{
+        width: 206px;
+        height: auto;
+    }
+    .btn_relative_box button div{
+        font-size: 1rem;
+    }
+}
