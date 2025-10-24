@@ -1,0 +1,19 @@
+<% blog_list.forEach((item, index) => { %>
+    <div class="card-blog">
+        <img src="/images/formBlog.svg" alt="">
+        <article class="blog-info">
+            <header>
+                <p>0<%= index + 1%></p>
+                <p><%= item.author%></p>
+            </header>
+            <h3><%= item.subject_blog%></h3>
+            <data value="<%= item.date%>"><%= item.formattedDate %></data>
+        </article>
+        <div class = "card-blog-imageContain">
+            <img src="<%= item.image%>" alt="">
+        </div>
+        <div class="card-blog-time">
+            <time datetime="PT3M"><span>3</span> <span>мин</span></time>
+        </div>
+    </div>
+<% }) %>

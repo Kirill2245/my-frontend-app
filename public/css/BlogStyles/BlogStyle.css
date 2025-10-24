@@ -1,0 +1,29 @@
+.blog-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+    box-sizing: border-box;
+    gap: 70px;
+    color: white;
+}
+.blog-card-line{
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.blog-card-line::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}

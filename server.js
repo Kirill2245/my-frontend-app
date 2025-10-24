@@ -2,7 +2,7 @@ import express from 'express';
 import { type } from 'os';
 import path from 'path';
 import { fileURLToPath } from 'url';
-
+import { formatDateToRussian } from './public/js/helpers/formateDate.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -21,7 +21,6 @@ process.on('unhandledRejection', (reason, promise) => {
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static('public'));
-
 
 app.get('/', (req, res) => {
   const card = [{
@@ -68,10 +67,37 @@ app.get('/', (req, res) => {
     other_text:'изготовление на заказ',
     image:'/images/mirror.png'
   }]
+  const blog_list = [
+    {
+      author:'Laura Busche',
+      subject_blog:'новая коллекция кресел',
+      date:'2023-01-14T00:00:00.000Z',
+      image:'/images/blogimg.jpg'
+    },
+    {
+      author:'Laura Busche',
+      subject_blog:'новая коллекция кресел',
+      date:'2023-01-14T00:00:00.000Z',
+      image:'/images/blogimg.jpg'
+    },
+    {
+      author:'Laura Busche',
+      subject_blog:'новая коллекция кресел',
+      date:'2023-01-14T00:00:00.000Z',
+      image:'/images/blogimg.jpg'
+    },
+
+  ]
+  const formattedData = blog_list.map(item => ({
+        ...item,
+        formattedDate: formatDateToRussian(item.date)
+    }));
+    console.log(formattedData)
   console.log('✅ Маршрут / вызван');
   res.render('pages/index',{
     cardlist:card,
-    category_card:category_card
+    category_card:category_card,
+    blog_list:formattedData
   });
 });
 app.get('/selected-category/:id', (req, res) => {
