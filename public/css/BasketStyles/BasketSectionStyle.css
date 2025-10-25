@@ -1,0 +1,33 @@
+.basket-section{
+    position: absolute;
+    width: 619px;
+    height: 906px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(200px);
+    border-radius: 30px;
+    right: 41px;
+    z-index: 100001;
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: translateY(-90%) scale(0);
+    padding: 22px 0 48px 48px;
+}
+.basket-section header{
+    width: 100%;
+    padding-right:23px ;
+    display: flex;
+    justify-content: space-between;
+}
+.basket-section header h3{
+    height: 23px;
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 26px;
+}

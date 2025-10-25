@@ -3,6 +3,7 @@ import { type } from 'os';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { formatDateToRussian } from './public/js/helpers/formateDate.js';
+import { count } from 'console';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -88,6 +89,7 @@ app.get('/', (req, res) => {
     },
 
   ]
+  const basket = [{name:'coppelia', descripton:'Лампа настольная', color:'#FA8EEF', price:'150 000', count:1, image:'/images/basketProd.png'},{name:'coppelia', descripton:'Лампа настольная', color:'#FA8EEF', price:'150 000', count:1, image:'/images/basketProd.png'}]
   const formattedData = blog_list.map(item => ({
         ...item,
         formattedDate: formatDateToRussian(item.date)
@@ -96,7 +98,8 @@ app.get('/', (req, res) => {
   res.render('pages/index',{
     cardlist:card,
     category_card:category_card,
-    blog_list:formattedData
+    blog_list:formattedData,
+    basket:basket
   });
 });
 app.get('/selected-category/:id', (req, res) => {
