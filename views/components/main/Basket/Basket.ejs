@@ -3,7 +3,19 @@
         <h3>Ваша корзина</h3>
         <img src="/images/x.svg" alt="close" id ="close-basket">
     </header>
-    <%- include('./BaskedCards')%>
+    <div class="basket-card-line">
+        <%- include('./BaskedCards')%>
+    </div>
     <footer>
+        <div class="basket-footer-box">
+            <h4>итого:</h4>
+            <div>
+                <p>
+                    <%= basket.reduce((sum, item) => sum + Number(item.price.replace(/\s/g, '')), 0).toLocaleString('ru-RU') %> 
+                </p>
+                <span>₽</span>
+            </div>
+        </div>
+        <button>Оформить</button>
     </footer>
 </section>

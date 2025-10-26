@@ -1,3 +1,26 @@
 <% basket.forEach((item, index) => { %>
-    <div><%= item.name%></div>
+    <div class="basket-card">
+        <img src="<%= item.image %>" alt="image product - <%= item.name %>" class="img-product-basket">
+        <article>
+            <div class="article-body">
+                <div class="article-body-box">
+                    <div>
+                        <div style="--product-color: <%= item.color %>"></div>
+                        <h4><%= item.name %></h4>
+                    </div>
+                    <p><%= item.description %></p>
+                </div>
+                <img src="/images/trash.svg" alt="">
+            </div>
+            <div class="basket-line"></div>
+            <div class="card-price-box">
+                <div ><p><%= item.price %></p> <span>₽</span></div>
+                <div>
+                    <button><span>-</span></button>
+                    <span><%= item.count %></span>
+                    <button><span>+</span></button>
+                </div>
+            </div>
+        </article>
+    </div>
 <% }) %>

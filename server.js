@@ -89,7 +89,13 @@ app.get('/', (req, res) => {
     },
 
   ]
-  const basket = [{name:'coppelia', descripton:'Лампа настольная', color:'#FA8EEF', price:'150 000', count:1, image:'/images/basketProd.png'},{name:'coppelia', descripton:'Лампа настольная', color:'#FA8EEF', price:'150 000', count:1, image:'/images/basketProd.png'}]
+  const basket = [
+    {name:'coppelia', description:'Лампа настольная', color:'#FA8EEF', price:'150 000', count:1, image:'/images/basketProd.png'},
+    {name:'coppelia', description:'Лампа настольная', color:'#FA8EEF', price:'150 000', count:1, image:'/images/basketProd.png'},
+    {name:'coppelia', description:'Лампа настольная', color:'#FA8EEF', price:'150 000', count:1, image:'/images/basketProd.png'},
+    {name:'coppelia', description:'Лампа настольная', color:'#FA8EEF', price:'150 000', count:1, image:'/images/basketProd.png'},
+    {name:'coppelia', description:'Лампа настольная', color:'#FA8EEF', price:'150 000', count:1, image:'/images/basketProd.png'},
+  ]
   const formattedData = blog_list.map(item => ({
         ...item,
         formattedDate: formatDateToRussian(item.date)

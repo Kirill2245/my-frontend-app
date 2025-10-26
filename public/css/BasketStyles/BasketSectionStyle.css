@@ -11,13 +11,15 @@
     transition: all 0.4s ease;
     opacity: 0;
     transform: translateY(-90%) scale(0);
-    padding: 22px 0 48px 48px;
+    padding: 22px 23px 48px 48px;
+    box-sizing: border-box;
+    align-items: center;
 }
 .basket-section header{
     width: 100%;
-    padding-right:23px ;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 53px;
 }
 .basket-section header h3{
     height: 23px;
@@ -30,4 +32,90 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-top: 26px;
+}
+.basket-card-line{
+    width: 100%;
+    height: 555px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    overflow-y: auto;
+    padding-right: 25px;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+.basket-card-line::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+.basket-section footer{
+    margin-top: 83px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    color: #FFFFFF;
+}
+.basket-footer-box{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.basket-footer-box h4{
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+}
+.basket-footer-box div{
+    height: 28px;
+    display: flex;
+    gap:7px;
+}
+.basket-footer-box div p{
+    height: 28px;
+    font-family: 'Floreste Wavy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.basket-footer-box div span{
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+.basket-section footer button{
+    width: 189px;
+    height: 93px;
+    border: 2px solid #D9FF5A;
+    border-radius: 50%;
+    transform: rotate(-6deg);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+
 }

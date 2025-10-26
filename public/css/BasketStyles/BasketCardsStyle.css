@@ -1,0 +1,124 @@
+.basket-card{
+    width: 100%;
+    height: 145px;
+    display: flex;
+    gap: 41px;
+    align-items: center;
+}
+.img-product-basket{
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 145px;
+    object-fit: contain; 
+}
+.basket-card article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.basket-card .article-body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.basket-card .article-body-box{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-bottom: 22px;
+}
+.basket-card .article-body-box div:first-of-type{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.basket-card .article-body-box div:first-of-type div{
+    width: 17px;
+    height: 17px;
+    border: 3px solid white;
+    border-radius: 50%;
+    background-color: var(--product-color);
+}
+.basket-card .article-body-box div:first-of-type h4{
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 1.25rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: white;
+}
+.basket-card .article-body-box p{
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 1.125rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.basket-line{
+    width: 100%;
+    height: 2px;
+    background-color: #D9FF5A;
+    margin-bottom: 15px;
+}
+.card-price-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-price-box div:first-of-type{
+    display: flex;
+    gap: 7px;
+    color: white;
+    height: 20px;
+}
+.card-price-box div:first-of-type p{
+    font-family: 'Floreste Wavy';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+}
+.card-price-box div:first-of-type span{
+    height: 14px;
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+.card-price-box div:last-of-type{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+}
+.card-price-box div:last-of-type button{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #FFFFFF30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.card-price-box div:last-of-type button span{
+    width: 9px;
+    height: 13px;
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 13px;
+    letter-spacing: 0%;
+    text-align: center;
+}
