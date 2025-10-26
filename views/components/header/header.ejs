@@ -8,7 +8,7 @@
             </div>
             <div>
                 <a href="">Блог</a>
-                <a href="">Контакты</a>
+                <a id = 'open-contact'>Контакты</a>
             </div>
             <div>
                 <img src="/images/search.svg" alt="Search-icon">
@@ -21,9 +21,12 @@
                 <button aria-label="Personal account" id = "btn-autor">
                     <img src="/images/profile.svg" alt="profile-icon" width="20" height="20">
                 </button>
-                <button aria-label="Basket" id = "btn-basket">
-                    <img src="/images/basket.svg" alt="basket-icon" width="20" height="20">
-                </button>
+                <div class="basket-contain-header">
+                    <button aria-label="Basket" id = "btn-basket">
+                        <img src="/images/basket.svg" alt="basket-icon" width="20" height="20">
+                    </button>
+                    <div class="box-anim-add" id = 'box-anim-add'>+1</div>
+                </div>
             </div>
             <img src="/images/contact.svg" alt="" class="img-contact">
         </nav>

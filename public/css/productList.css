@@ -80,11 +80,11 @@
     align-items: center;
     margin-top: 26px;
 }
-.card-product article .price-card-buy div{
+.card-product article .price-card-buy .price-box{
     display: flex;
     gap: 7px;
 }
-.card-product article .price-card-buy div span{
+.card-product article .price-card-buy .price-box span{
     width: 13px;
     height: 14px;
     font-family: 'Euclid Circular A', sans-serif;
@@ -96,7 +96,7 @@
     text-transform: uppercase;
     margin-bottom: 6px;
 }
-.card-product article .price-card-buy div p {
+.card-product article .price-card-buy .price-box p {
     height: 20px;
     font-family: 'Floreste Wavy';
     font-weight: 400;
@@ -133,6 +133,40 @@
     font-size: 20px;
     line-height: 120%;
     color: #FFFFFF;
+}
+.card-product .price-card-buy .relative-box-btn{
+    position: relative;
+}
+.card-product .price-card-buy .relative-box-btn div{
+    opacity: 0;
+    height:20px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+@keyframes anima{
+    0%{
+        opacity: 0.5;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.card-product .price-card-buy .relative-box-btn img{
+    width: 20px;
+    height: 20px;
 }
 .upload-more-btn{
     width: 319px;

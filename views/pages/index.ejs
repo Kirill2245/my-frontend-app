@@ -22,6 +22,8 @@
         <link rel="stylesheet" href="/css/AutorizationStyles/AutorizationStyle.css">
         <link rel="stylesheet" href="/css/AutorizationStyles/RegistrationFormStyle.css">
         <link rel="stylesheet" href="/css/AutorizationStyles/SignFormStyle.css">
+        <link rel="stylesheet" href="/css/ConatctStyles/ContactSectionStyle.css">
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=c764240c-e710-4d34-8075-22555823752d&lang=ru_RU" type="text/javascript"></script>
         <style>
             @font-face {
                 font-family: 'Le Murmure';
@@ -60,4 +62,15 @@
     <script src="/js/hendler-basket.js"></script>
     <script src="/js/hendler-autorization.js"></script>
     <script src="/js/handler-switch-form.js"></script>
+    <script src="/js/hendler-buy-btn.js"></script>
+    <script src="/js/hendler-buy-btn-product.js"></script>
+    <script src="/js/hendler-open-contact.js"></script>
+    <script>
+    ymaps.ready(function() {
+        new ymaps.Map("map", {
+            center: [55.76, 37.64],
+            zoom: 10
+        });
+    });
+    </script>   
 </html>

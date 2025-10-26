@@ -17,12 +17,15 @@
     transform: translate(-50%,-50%);
 }
 .btn_relative_box button{
+    width: 200px;
+    height: 80px;
     top:50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
     border: none;
     background-color: transparent;
+    border-radius: 50%;
 }
 .btn_relative_box button div{
     display: flex;

@@ -43,32 +43,54 @@ function updateSelectedCategory(id) {
         });
 }
 
+let productCounter = 0;
+
 function CardProduct(item) {
+    const uniqueId = `box-anim-add-product-${productCounter++}`;
+    
     return `
-        <div class = "card-product">
-            <div class = "card-product-contain">
-                <div style = "background-color:${item.color};"></div>
-                <img src = "${item.image}"/>
+        <div class="card-product">
+            <div class="card-product-contain">
+                <div style="background-color:${item.color};"></div>
+                <img src="${item.image}"/>
             </div>
             <article>
-                <h3 class = "text-uppercase">${item.name}</h3>
-                <p class = "text-description">${item.descripton}</p>
+                <h3 class="text-uppercase">${item.name}</h3>
+                <p class="text-description">${item.descripton}</p>
                 <svg width="274" height="2" viewBox="0 0 274 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="1" x2="274" y2="1" stroke="#D9FF5A" stroke-width="2"/>
                 </svg>
-                <div class = "price-card-buy">
-                    <div>
+                <div class="price-card-buy">
+                    <div class='price-box'>
                         <p>${item.price}</p>
                         <span>₽</span>
                     </div>
-                    <button>
-                        <img src = "/images/shopping-cart.svg"/>
-                        <span>Купить</span>
-                    </button>
+                    <div class="relative-box-btn">
+                        <div id="${uniqueId}" class="box-anim-add-product">+ <img src="/images/basket.svg"></div>
+                        <button onclick="handleBuyClickAddProduct('${uniqueId}')">
+                            <img src="/images/shopping-cart.svg"/>
+                            <span>Купить</span>
+                        </button>
+                    </div>
                 </div>
             </article>
         </div>
-    `
+    `;
+}
+
+const handleBuyClickAdd = (elementId) => {
+    console.log('click')
+    const box_anim_add_product = document.getElementById(elementId);
+    box_anim_add_product.style.animation = 'none';
+    void box_anim_add_product.offsetWidth;
+    box_anim_add_product.style.animation = 'animadd 0.8s';
+    box_anim_add_product.style.transform = 'translateY(-50px) scale(1)';
+    box_anim_add_product.style.opacity = '1';
+    console.log(box_anim_add_product);
+    
+    setTimeout(() => {
+        box_anim_add_product.style.transform = 'translate(-50%, -50%) scale(0)';
+    }, 1000);
 }
 function clearSelection() {
     const selectedSection = document.querySelector('.select-section-categoryes');
