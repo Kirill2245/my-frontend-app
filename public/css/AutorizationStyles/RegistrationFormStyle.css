@@ -1,0 +1,83 @@
+.registration-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 25px;
+    color: white;
+}
+.registration-form header{
+    width: 100%;
+    margin-bottom: 66px;
+}
+.registration-form header h2{
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 1.125rem;
+    line-height: 100%;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+}
+.auth-fields{
+    display:flex;
+    flex-direction: column;
+    gap: 50px;
+    border: none;
+    margin-bottom: 44px;
+}
+.auth-fields input{
+    width: 100%;
+    height: 31px; 
+    border: none;
+    border-bottom: 2px solid #D9FF5A;
+    background-color: transparent;
+    padding: 0 0 18.5px 0; 
+    box-sizing: border-box;
+}
+
+.auth-fields input::placeholder{
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 12px; 
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: white;
+}
+.auth-fields input:focus{
+    padding: 0 0 0 0; 
+    outline: none; 
+}
+.registration-form button{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+}
+.registration-form button:first-of-type{
+    width: 188px;
+    height: 96px;
+    border:2px solid #D9FF5A;
+    border-radius: 50%;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    background-color: #EBE3FF30;
+    transform: rotate(-6deg);
+    margin-bottom: 61px;
+}
+.registration-form button:last-of-type{
+    width: 108px;
+    height: 16px;
+    justify-content: space-between;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+
+}

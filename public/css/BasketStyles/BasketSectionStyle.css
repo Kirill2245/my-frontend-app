@@ -119,3 +119,9 @@
     text-align: center;
 
 }
+@media(max-width:750px){
+    .basket-section{
+        right: 15px;
+        z-index: 100001;
+    }
+}
