@@ -1,3 +1,83 @@
 .sign-form{
     display: none;
+    flex-direction: column;
+    padding: 0 25px 0 0;
+}
+.sign-form header{
+    display: flex;
+    margin-bottom: 66px;
+}
+.sign-form header h2{
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+    color: white;
+}
+.sign-fields{
+    display:flex;
+    flex-direction: column;
+    gap: 50px;
+    border: none;
+    margin-bottom: 48px;
+}
+.sign-fields input{
+    width: 100%;
+    height: 31px; 
+    border: none;
+    border-bottom: 2px solid #D9FF5A;
+    background-color: transparent;
+    padding: 0 0 18.5px 0; 
+    box-sizing: border-box;
+}
+
+.sign-fields input::placeholder{
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 12px; 
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: white;
+}
+.sign-fields input:focus{
+    padding: 0 0 0 0; 
+    outline: none; 
+}
+.sign-form button{
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.sign-form .btn-sign-in{
+    width: 120px;
+    height: 81px;
+    border: 2px solid #D9FF5A;
+    background-color: #EBE3FF30;
+    transform: rotate(-15deg);
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    margin-bottom: 70px;
+}
+.box-btn-sign{
+    display: flex;
+    gap: 24px;
+}
+.box-btn-sign button{
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+    gap: 17px;
 }
